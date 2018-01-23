@@ -2,10 +2,10 @@ FROM alpine:3.7
 
 LABEL author="hurisheng"
 
-RUN apk add --no-cache bash openldap openldap-back-mdb \
+RUN apk add --no-cache bash openldap openldap-back-mdb openldap-clients \
   && mkdir /run/openldap
 
-VOLUME [ "/var/lib/openldap", "/etc/openldap" ]
+VOLUME [ "/var/lib/openldap", "/etc/openldap/slapd.d" ]
 
 EXPOSE 389
 
