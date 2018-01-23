@@ -1,0 +1,1 @@
+This is the Docker image of OpenLDAP based on AlpineLinux
