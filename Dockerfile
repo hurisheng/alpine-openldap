@@ -5,7 +5,7 @@ LABEL author="hurisheng"
 RUN apk add --no-cache bash openldap openldap-back-mdb openldap-clients \
   && mkdir /run/openldap
 
-VOLUME [ "/var/lib/openldap", "/etc/openldap/slapd.d" ]
+VOLUME [ "/var/lib/openldap", "/etc/openldap" ]
 
 EXPOSE 389
 
