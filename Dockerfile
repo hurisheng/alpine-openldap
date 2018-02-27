@@ -9,4 +9,4 @@ VOLUME [ "/var/lib/openldap/openldap-data", "/etc/openldap" ]
 
 EXPOSE 389
 
-CMD [ "slapd", "-d", "1" ]
+CMD [ "slapd", "-d", "-1" ]
